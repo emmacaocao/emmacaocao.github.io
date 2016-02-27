@@ -1,55 +1,95 @@
-@font-face {
-   font-family: Luna;
-   src: url('../fonts/Luna.ttf');
+/* ===== GLOBALS ===== */
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
 }
-* {
-	font-family: Luna !important;
+
+#content-wrapper {
+  position: relative;
+  background: #ffffff;
 }
-header {
-  text-align: center;
-  background: url('../img/background1.jpg');
-  background-size: cover;
-	color: white;
+
+
+/* ===== HEADER/NAV ===== */
+
+#navbar {
+  z-index: 222;
+  height: 5em;
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px white;
 }
-h1 {
-  font-size: 70px;
+
+#nav-links {
+  float: right;
+  margin-right: 2em;
 }
-img {
-  margin: 40px 0px 0px 0px;
-  border: 7px solid black;
-  border-radius: 20px;
+
+#nav-links a {
+  margin-right: 1em;
+  margin-left: 1em;
+  color: white;
+  text-decoration: none;
 }
-ul {
-  padding: 10px;
+
+#navbar .nav {
+
+}
+
+/* ===== SPLASH ===== */
+
+#splash {
+	background: transparent;
+}
+
+#splash-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0,0,0,0.5);
 }
-#menubar {
-color: white;
+
+#splash-content {
+	color: white;
+	text-align: center;
 }
-li {
-  display: inline;
-  padding: 0px 10px 0px 10px;
+
+#splash-content h1 {
+	font-size: 3em;
+	letter-spacing: 0.3px;
+	margin-bottom: 0.1em;
 }
-article {
-  max-width: 500px;
-  padding: 20px;
-  margin: 0 auto;
+
+#splash-content h2 {
+	font-size: 1.5em;
+	letter-spacing: 0.3px;
 }
-@media (max-width: 500px) {
-   #profile {
-    width: 120px
-  }
-  header {
-   background-size: 300px;
-   background-repeat: no-repeat;
-  }
-  h1 {
-    font-size: 36px;
-    color: #742;
-    padding: 5px;
-  }
-  li {
-    padding: 5px;
-    display: block;
-  }
+
+/* ===== CONTENT SECTIONS ===== */
+
+#about {
+	margin-top: 2em;;
+	text-align: center;
+}
+
+/* ===== REUSABLE CONFIGURATIONS ===== */
+
+
+.vcenter-out {
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.vcenter-mid {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.vcenter-inn {
+	margin-left: auto;
+	margin-right: auto;
 }

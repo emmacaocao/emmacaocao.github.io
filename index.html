@@ -6,23 +6,55 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Emma Cao</title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<!-- JS -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/jquery.transit.min.js"></script>
+		<script src="assets/js/parallax.min.js"></script>
 	</head>
 	<body>
-	<header>
-	    <img id= "profile" src="assets/img/molang.gif">
-	    <h1>Emma Cao</h1>
-	    <ul>
-	      <li><a href="./index.html" id= "menubar">Home</a></li>
-	    </ul>
-	  </header>
-	<article>
-	<h2>Welcome~</h2>
-	<p>IM A MOLANG o ^ o/</p>
-	</article>
-	<script src="assets/js/jquery-2.1.4.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+		<nav id="navbar">
+			<div id="nav-left" class="nav">
+				EC
+			</div>
+			<div id="nav-links" class="nav">
+				<a href="#about">About</a>
+				<a href="">Experience</a>
+				<a href="">Contact</a>
+			</div>
+		</nav>
+		<div id="slider" class="slider-parallax full-screen">
+			<div id="splash" class="full-screen">
+				<div id="splash-overlay"></div>
+				<div class="vcenter-out">
+					<div class="vcenter-mid">
+						<div id="splash-content" class="vcenter-inn">
+							<h1>Hi, I'm Emma Cao.</h1>
+							<h2>Business enthusiast, finance specialist, and a promolang.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content-wrapper">
+			<div id="content" class="container">
+				<section class="row" id="about">
+					<article class="offset-by-two eight columns">
+					<h2>About Me</h2>
+					<p>Hi there! I'm Emma Cao and I am a second year Financial Analysis and Risk Management student at the University of Waterloo.</p>
+					</article>
+				</section>
+				<section class="row" id="experience">
+				</section>
+				<section class="row" id="">
+				</section>
+			</div>
+		</div>
+		<footer>
+		</footer>
+		<script src="assets/js/functions.js"></script>
 	</body>
 </html>
