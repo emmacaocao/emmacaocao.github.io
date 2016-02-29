@@ -5,36 +5,60 @@ body {
 }
 
 #content-wrapper {
-  position: relative;
   background: #ffffff;
 }
-
 
 /* ===== HEADER/NAV ===== */
 
 #navbar {
-  z-index: 222;
-  height: 5em;
-  position: fixed;
-  width: 100%;
-  border-bottom: solid 1px white;
+	display: block;
+	height: 6.5rem;
+	background: transparent;
+	z-index: 222;
+	padding-left: 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
-#nav-links {
-  float: right;
-  margin-right: 2em;
+
+#navbar .left {
+	float: left;
 }
 
-#nav-links a {
-  margin-right: 1em;
-  margin-left: 1em;
+#navbar .links {
+	float: right;
+	margin-bottom: 0;
+  margin: auto;
+}
+
+#navbar a {
+	text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: .3rem;
+  padding-right: 1.5em;
+	padding-left: 1.5em;
+  line-height: 6.5rem;
   color: white;
-  text-decoration: none;
+	text-decoration: none;
 }
 
-#navbar .nav {
+#navbar .links a:last-child {
 
 }
+
+#navbar ul {
+	list-style: none;
+}
+
+#navbar li, #navbar a {
+	float: left;
+	margin-bottom: 0;
+}
+
 
 /* ===== SPLASH ===== */
 
@@ -42,7 +66,7 @@ body {
 	background: transparent;
 }
 
-#splash-overlay {
+#splash .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,27 +75,31 @@ body {
   background: rgba(0,0,0,0.5);
 }
 
-#splash-content {
+#splash .content {
 	color: white;
 	text-align: center;
 }
 
-#splash-content h1 {
-	font-size: 3em;
+#splash .content h1 {
+	font-size: 2.5em;
 	letter-spacing: 0.3px;
 	margin-bottom: 0.1em;
 }
 
-#splash-content h2 {
-	font-size: 1.5em;
+#splash .content h2 {
+	font-size: 1.25em;
 	letter-spacing: 0.3px;
 }
 
 /* ===== CONTENT SECTIONS ===== */
 
 #about {
-	margin-top: 2em;;
+	margin-top: 2em;
 	text-align: center;
+}
+
+#about h1 {
+	font-size: 2em;
 }
 
 /* ===== REUSABLE CONFIGURATIONS ===== */

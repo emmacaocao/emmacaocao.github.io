@@ -29,7 +29,7 @@ var UNIVERSE = UNIVERSE || {};
 		},
 
     parallax: function() {
-      $('#splash').parallax({imageSrc: './assets/img/city_background.jpg'});
+      $('#splash-wrapper').parallax({imageSrc: './assets/img/city_background.jpg'});
     },
 
     /*
