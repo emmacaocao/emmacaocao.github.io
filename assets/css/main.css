@@ -1,5 +1,9 @@
 /* ===== GLOBALS ===== */
 
+html {
+	font-size: 69%;
+}
+
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
 }
@@ -113,7 +117,7 @@ body {
 }
 
 #about h1 {
-	font-size: 2.2rem;
+	font-size: 2.3rem;
 }
 
 #education {
@@ -149,8 +153,31 @@ body {
 	padding-top: 0.2rem;
 }
 
-/* ===== REUSABLE CONFIGURATIONS ===== */
+/* ===== FOOTER ===== */
 
+#contact-wrapper {
+	background-color: rgb(55, 55, 55);
+	color: rgb(222, 222, 222);
+	padding-top: 3rem;
+	text-align: center;
+}
+
+#contact-wrapper h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+#copyright {
+	background-color: rgb(35, 35, 35);
+	color: rgb(88, 88, 88);
+	font-size: 1.4rem;
+	text-align: center;
+	padding-top: 1.4rem;
+	padding-bottom: 1.4rem;
+}
+
+
+/* ===== REUSABLE CONFIGURATIONS ===== */
 
 .vcenter-out {
 	display: table;
