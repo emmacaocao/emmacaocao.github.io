@@ -4,8 +4,12 @@ body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
 }
 
-#content-wrapper {
-  background: #ffffff;
+#content-wrapper section {
+	background: #ffffff;
+}
+
+.accent {
+	color: #0097A7;
 }
 
 /* ===== HEADER/NAV ===== */
@@ -93,13 +97,50 @@ body {
 
 /* ===== CONTENT SECTIONS ===== */
 
+#content-wrapper .section-title h1 {
+	font-weight: bold;
+	font-size: 1.7rem;
+	margin-bottom: 2rem;
+}
+
+#content-wrapper section {
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+
 #about {
-	margin-top: 2em;
 	text-align: center;
 }
 
 #about h1 {
-	font-size: 2em;
+	font-size: 2.2rem;
+}
+
+#education article,
+#experience article {
+	margin-bottom: 3rem;
+}
+
+.section-content h1 { /* Main Title */
+	font-size: 1.7rem;
+	margin-bottom: 0.5rem;
+	letter-spacing: -0.06rem;
+}
+
+.section-content h2 { /* Sub Heading */
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	font-style: italic;
+	letter-spacing: 0;
+}
+
+.section-content p {
+	margin-bottom: 1rem;
+}
+
+.date h1 {
+	font-size: 1.3rem;
+	padding-top: 0.2rem;
 }
 
 /* ===== REUSABLE CONFIGURATIONS ===== */
@@ -121,3 +162,5 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.nomargin { margin: 0 !important; }
