@@ -1,10 +1,23 @@
+/*
+Bootstrap media query values for reference
+Extra small devices (phones, less than 768px)
+No media query since this is the default in Bootstrap
+
+Small devices (tablets)
+@media (min-width: 768px) { ... }
+
+Medium devices (desktops)
+@media (min-width: 992px) { ... }
+
+Large devices (large desktops)
+@media (min-width: 1200px) { ... }
+*/
+
+
 /* ===== GLOBALS ===== */
 
-html {
-	font-size: 69%;
-}
-
 body {
+	font-size: 16px !important;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
 }
 
@@ -20,12 +33,12 @@ body {
 
 #navbar {
 	display: block;
-	height: 6.5rem;
-	background: transparent;
-	z-index: 222;
-	padding-left: 20px;
 	position: fixed;
+	z-index: 222;
+	height: 6.5rem;
 	width: 100%;
+	background: transparent;
+	padding-left: 20px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -44,9 +57,9 @@ body {
 
 #navbar a {
 	text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  letter-spacing: .3rem;
+  letter-spacing: .4rem;
   padding-right: 1.5em;
 	padding-left: 1.5em;
   line-height: 6.5rem;
@@ -89,14 +102,29 @@ body {
 }
 
 #splash .content h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	letter-spacing: 0.3px;
 	margin-bottom: 0.1em;
 }
 
+@media (min-width: 768px) {
+	#splash .content h1 {
+		font-size: 2.5em;
+		letter-spacing: 0.3px;
+		margin-bottom: 0.1em;
+	}
+}
+
 #splash .content h2 {
-	font-size: 1.25em;
+	font-size: 1.0em;
 	letter-spacing: 0.3px;
+}
+
+@media (min-width: 768px) {
+	#splash .content h2 {
+		font-size: 1.3em;
+		letter-spacing: 0.3px;
+	}
 }
 
 /* ===== CONTENT SECTIONS ===== */
@@ -116,8 +144,14 @@ body {
 	text-align: center;
 }
 
-#about h1 {
-	font-size: 2.3rem;
+#about h2 {
+	font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+	#about h2 {
+		font-size: 1.9em;
+	}
 }
 
 #education {
@@ -130,13 +164,14 @@ body {
 }
 
 .section-content h1 { /* Main Title */
-	font-size: 1.7rem;
+	font-size: 1.9rem;
 	margin-bottom: 0.5rem;
 	letter-spacing: -0.06rem;
 }
 
 .section-content h2 { /* Sub Heading */
-	font-size: 1.4rem;
+	font-size: 1.5rem;
+	margin-top: 0.2rem;
 	margin-bottom: 1rem;
 	font-style: italic;
 	letter-spacing: 0;
@@ -158,8 +193,8 @@ body {
 #contact-wrapper {
 	background-color: rgb(55, 55, 55);
 	color: rgb(222, 222, 222);
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding-top: 2em;
+	padding-bottom: 3em;
 	text-align: center;
 }
 
@@ -182,43 +217,39 @@ body {
 	font-size: 2.5rem;
 }
 
-.round-btn:hover {
+.round-btn.nottouch:hover {
 	color: #fff;
 	text-decoration:none;
 }
 
-#email:hover {
+#email.nottouch:hover {
 	background-color: #FF5252;
 }
 
-#linkedin:hover {
+#linkedin.nottouch:hover {
 	background-color: #4875B4;
 }
 
-#github {
-	font-size:
-}
-
-#github:hover {
+#github.nottouch:hover {
 	background-color: #4C2A78;
 }
 
-#resume:hover {
+#resume.nottouch:hover {
 	background-color: #FF9800;
 }
 
 
-.tooltip {
+.xtooltip {
 	position: relative;
 	text-align: center;
 }
 
-.tooltip:hover:after {
+.nottouch.xtooltip:hover:after {
   background: #333;
   background: rgba(0,0,0,.8);
   border-radius: 5px;
   color: #fff;
-  content: attr(data-tooltip);
+  content: attr(data-xtooltip);
 	font-size: 1.3rem;
   position: absolute;
 	height: 3rem;
@@ -228,7 +259,7 @@ body {
 	pointer-events: none;
 }
 
-.tooltip:hover:before{
+.nottouch.xtooltip:hover:before{
   border: solid;
   border-color: rgba(0,0,0,.8) transparent;
   border-width: 0 0.5rem 0.5rem 0.5rem;
@@ -240,22 +271,22 @@ body {
 	left: 3rem;
 }
 
-#email:hover:after {
+#email.nottouch:hover:after {
 	width: 14rem;
 	left: calc(3.5rem - 0.5 * 14rem); /* 3.5rem (aka width of parent) - 0.5*width of this */
 }
 
-#linkedin:hover:after {
+#linkedin.nottouch:hover:after {
 	width: 7.5rem;
 	left: calc(3.5rem - 0.5 * 7.5rem);
 }
 
-#github:hover:after {
+#github.nottouch:hover:after {
 	width: 9.5rem;
 	left: calc(3.5rem - 0.5 * 9.5rem);
 }
 
-#resume:hover:after {
+#resume.nottouch:hover:after {
 	width: 6.25rem;
 	left: calc(3.5rem - 0.5 * 6.25rem);
 }
@@ -263,10 +294,10 @@ body {
 #copyright {
 	background-color: rgb(35, 35, 35);
 	color: rgb(88, 88, 88);
-	font-size: 1.4rem;
+	font-size: 0.9em;
 	text-align: center;
-	padding-top: 1.4rem;
-	padding-bottom: 1.4rem;
+	padding-top: 1.4em;
+	padding-bottom: 1.4em;
 }
 
 

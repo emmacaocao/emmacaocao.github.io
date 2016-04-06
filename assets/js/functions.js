@@ -1,4 +1,4 @@
-var LOG = true;
+var LOG = false;
 
 var UNIVERSE = UNIVERSE || {};
 
@@ -10,6 +10,7 @@ var UNIVERSE = UNIVERSE || {};
     init: function() {
       UNIVERSE.initialize.fullScreen();
       UNIVERSE.initialize.parallax();
+      UNIVERSE.initialize.touchElements();
     },
 
     fullScreen: function() {
@@ -32,6 +33,11 @@ var UNIVERSE = UNIVERSE || {};
       $('#splash-wrapper').parallax({imageSrc: './assets/img/city_background.jpg'});
     },
 
+    touchElements: function() {
+      if (!UNIVERSE.isMobile.any()) {
+        $('.reqtouch').addClass('nottouch');
+      }
+    }
     /*
     // Custom parallax not used, replaced by init.parallax() right now
     windowScroll: function() {

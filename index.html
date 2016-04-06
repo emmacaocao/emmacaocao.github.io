@@ -8,31 +8,33 @@
 		<!-- Meta -->
 		<title>Emma Cao</title>
 		<meta name="description" content="Emma Cao's personal website.">
-		<meta name="keywords" content="Emma,Cao,emmacao,website,emmacaocao">
+		<meta name="keywords" content="Emma,Cao,emmacao,website,emmacaocao,resume,linkedin,university,waterloo,canada">
 		<meta name="author" content="Emma Cao">
 		<!-- Font(s) -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-		<!-- JS -->
-		<script src="assets/js/jquery-2.1.4.min.js"></script>
-		<script src="assets/js/jquery.transit.min.js"></script>
-		<script src="assets/js/parallax.min.js"></script>
 	</head>
 	<body>
-		<nav id="navbar" class="container">
-			<div class="left">
-				<a href="/">EC</a>
+		<div class="container">
+			<div class="row">
+				<nav id="navbar">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="left">
+								<a href="/">EC</a>
+							</div>
+							<ul class="links">
+								<li><a href="#about">About</a></li>
+								<li><a href="#experience">Experience</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+				</nav>
 			</div>
-			<ul class="links">
-				<li><a href="#about">About</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+		</div>
 		<div id="splash-wrapper" class="full-screen">
 			<div id="splash">
 				<div class="overlay"></div>
@@ -49,60 +51,60 @@
 		<div id="content-wrapper">
 			<div class="container">
 				<section class="row" id="about">
-					<article class="offset-by-two eight columns">
-					<h1>About Me</h1>
+					<article class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+					<h2>About Me</h2>
 					<p>Hi there! I'm Emma Cao and I am a second year Financial Analysis and Risk Management student at the University of Waterloo.</p>
 					</article>
 				</section>
 				<section class="row" id="education">
-					<div class="two columns section-title">
+					<div class="col-md-2 section-title">
 						<h1>Education</h1>
 					</div>
-					<div class="ten columns">
+					<div class="col-md-10">
 				 		<article class="row">
-							<div class="nine columns section-content">
+							<div class="col-sm-9 section-content">
 								<h1 class="accent">Honours Math/Financial Analysis and Risk Management</h1>
 								<h2>University of Waterloo</h2>
 								<p></p>
 							</div>
-							<div class="three columns date">
+							<div class="col-sm-3 date">
 								<h1>September 2014 — Present</h1>
 							</div>
 						</div>
 					</article>
 				</section>
 				<section class="row" id="experience">
-						<div class="two columns section-title">
+						<div class="col-md-2 section-title">
 							<h1>Experience</h1>
 						</div>
-						<div class="ten columns">
+						<div class="col-md-10">
 					 		<article class="row">
-								<div class="nine columns section-content">
+								<div class="col-sm-9 section-content">
 									<h1 class="accent">Business Venture Project</h1>
 									<h2>BU111 - Wilfred Laurier University</h2>
 									<p>Identified an opportunity in an industry and created a detailed business report with compelling and appealing research and explanation as validating support. Exercised communication skills by giving a convincing presentation of the venture to classmates.</p>
 								</div>
-								<div class="three columns date">
+								<div class="col-sm-3 date">
 									<h1>January — April 2015</h1>
 								</div>
 							</article>
 					 		<article class="row">
-								<div class="nine columns section-content">
+								<div class="col-sm-9 section-content">
 									<h1 class="accent">Vice President of Administration</h1>
 									<h2>ICChange Business Club</h2>
 									<p>A business club run by the Enactus Carleton Organization of Carleton University, with the goal of giving back to the community through projects from an entrepreneurial standpoint. Solidified the administrative sector of the team, updated over 50 members with weekly emails, occasionally leading meetings, and strengthening communication with other executives. Took on strategic planning of a major fundraising event to raise over $1000.</p>
 								</div>
-								<div class="three columns date">
+								<div class="col-sm-3 date">
 									<h1>October 2013 — June 2014</h1>
 								</div>
 							</article>
 					 		<article class="row">
-								<div class="nine columns section-content">
+								<div class="col-sm-9 section-content">
 									<h1 class="accent">Piano Tutor</h1>
 									<h2>Self-Employed</h2>
 									<p>Instructed students of all ages technical piano practice and music theory. Communicated with children and adults in English and Mandarin Chinese about areas of improvement and progress. Developed a unique teaching plan to fit each students’ learning styles.</p>
 								</div>
-								<div class="three columns date">
+								<div class="col-sm-3 date">
 									<h1>July 2011 — August 2014</h1>
 								</div>
 							</article>
@@ -118,17 +120,17 @@
 			<div id="contact-wrapper">
 				<div class="container">
 					<section class="row" id="contact">
-						<article class="offset-by-two eight columns">
+						<article class="col-md-offset-2 col-md-8">
 							<h1>Contact Me</h1>
 							<p>Feel free to reach out and find me through the links below!</p>
 						</article>
 					</section>
 					<section class="row">
-						<article class="offset-by-two eight columns">
-							<a href="mailto:emma.cao@bell.net" class="round-btn tooltip" id="email" data-tooltip="emma.cao@bell.net"><i class="fa fa-envelope-o social-icon"></i></a>
-							<a href="https://ca.linkedin.com/in/emmacao" target="_blank" class="round-btn tooltip" id="linkedin" data-tooltip="emmacao"><i class="fa fa-linkedin"></i></a>
-							<a href="https://github.com/emmacaocao" target="_blank" class="round-btn tooltip" id="github" data-tooltip="emmacaocao"><i class="fa fa-github"></i></a>
-							<a href="assets/data/resume.pdf" target="_blank" class="round-btn tooltip" id="resume" data-tooltip="Resume"><i class="fa fa-file-text-o"></i></a>
+						<article class="col-md-offset-2 col-md-8">
+							<a href="mailto:emma.cao@bell.net" class="round-btn reqtouch xtooltip" id="email" data-xtooltip="emma.cao@bell.net"><i class="fa fa-envelope-o social-icon"></i></a>
+							<a href="https://ca.linkedin.com/in/emmacao" target="_blank" class="round-btn reqtouch xtooltip" id="linkedin" data-xtooltip="emmacao"><i class="fa fa-linkedin"></i></a>
+							<a href="https://github.com/emmacaocao" target="_blank" class="round-btn reqtouch xtooltip" id="github" data-xtooltip="emmacaocao"><i class="fa fa-github"></i></a>
+							<a href="assets/data/resume.pdf" target="_blank" class="round-btn reqtouch xtooltip" id="resume" data-xtooltip="Resume"><i class="fa fa-file-text-o"></i></a>
 						</article>
 					</section>
 				</div>
@@ -137,6 +139,11 @@
 				<span>&#169; Emma Cao 2016 | Personal Website and Portfolio</span>
 			</div>
 		</footer>
+		<!-- JS -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/jquery.transit.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/parallax.min.js"></script>
 		<script src="assets/js/functions.js"></script>
 	</body>
 </html>
