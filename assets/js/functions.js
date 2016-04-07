@@ -34,7 +34,9 @@ var UNIVERSE = UNIVERSE || {};
     },
 
     touchElements: function() {
-      if (!UNIVERSE.isMobile.any()) {
+      if (UNIVERSE.isMobile.any()) {
+        $('.reqtouch').addClass('touch');
+      } else {
         $('.reqtouch').addClass('nottouch');
       }
     }

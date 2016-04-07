@@ -221,8 +221,17 @@ body {
 	color: #fff;
 	text-decoration:none;
 }
+.round-btn.nottouch:focus {
+	color: #fff;
+	text-decoration:none;
+	outline: none;
+}
 
 #email.nottouch:hover {
+	background-color: #FF5252;
+}
+
+#email.touch {
 	background-color: #FF5252;
 }
 
@@ -230,11 +239,23 @@ body {
 	background-color: #4875B4;
 }
 
+#linkedin.touch {
+	background-color: #4875B4;
+}
+
 #github.nottouch:hover {
 	background-color: #4C2A78;
 }
 
+#github.touch {
+	background-color: #4C2A78;
+}
+
 #resume.nottouch:hover {
+	background-color: #FF9800;
+}
+
+#resume.touch {
 	background-color: #FF9800;
 }
 
