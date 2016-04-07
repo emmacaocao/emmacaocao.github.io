@@ -42,8 +42,18 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease
 }
 
+#navbar.opaque {
+	background: #ffffff;
+	border-bottom: 1px solid #dddddd;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease
+}
 
 #navbar .left {
 	float: left;
@@ -65,10 +75,16 @@ body {
   line-height: 6.5rem;
   color: white;
 	text-decoration: none;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease
 }
 
-#navbar .links a:last-child {
-
+#navbar.opaque a {
+	color: #000000;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease
 }
 
 #navbar ul {

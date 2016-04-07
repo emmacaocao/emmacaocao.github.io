@@ -11,6 +11,7 @@ var UNIVERSE = UNIVERSE || {};
       UNIVERSE.initialize.fullScreen();
       UNIVERSE.initialize.parallax();
       UNIVERSE.initialize.touchElements();
+      UNIVERSE.initialize.scrollElements();
     },
 
     fullScreen: function() {
@@ -39,6 +40,10 @@ var UNIVERSE = UNIVERSE || {};
       } else {
         $('.reqtouch').addClass('nottouch');
       }
+    },
+
+    scrollElements: function() {
+      $window.scroll(UNIVERSE.header.scroll);
     }
     /*
     // Custom parallax not used, replaced by init.parallax() right now
@@ -52,7 +57,19 @@ var UNIVERSE = UNIVERSE || {};
     }*/
   };
 
-  UNIVERSE.header = {};
+  UNIVERSE.header = {
+
+    scroll: function() {
+      var top = $window.scrollTop();
+      if (top > 75 && !$('#navbar').hasClass('.opaque')) {
+        $('#navbar').addClass('opaque');
+      }
+      else if (top < 75) {
+        $('#navbar').removeClass('opaque');
+      }
+    }
+
+  };
 
   UNIVERSE.slider = {
 
