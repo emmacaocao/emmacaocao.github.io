@@ -115,7 +115,6 @@ body {
 	#navbar ul {
 		list-style: none;
 		padding: 0;
-		padding-left: 1.5em;
 	}
 }
 
@@ -127,6 +126,7 @@ body {
 }
 @media (max-width: 768px) {
 	#navbar li {
+		padding-left: 1.5em;
 		float: none;
 	}
 }
