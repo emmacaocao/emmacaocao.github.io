@@ -38,7 +38,6 @@ body {
 	height: 6.5rem;
 	width: 100%;
 	background: transparent;
-	padding-left: 20px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -55,17 +54,38 @@ body {
 	transition: all 0.2s ease
 }
 
-#navbar .left {
-	float: left;
+@media (max-width: 768px) {
+	#navbar .left {
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
-#navbar .links {
-	float: right;
-	margin-bottom: 0;
-  margin: auto;
+@media (min-width: 768px) {
+	#navbar .left {
+		float: left;
+	}
 }
 
-#navbar a {
+@media (max-width: 768px) {
+	#navbar .links {
+		display: none;
+		margin-bottom: 0;
+	  margin: auto;
+		background-color: #ffffff;
+	}
+}
+
+@media (min-width: 768px) {
+	#navbar .links {
+		float: right;
+		margin-bottom: 0;
+	  margin: auto;
+	}
+}
+
+#navbar .links a, #navbar a.home  {
 	text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 500;
@@ -91,11 +111,81 @@ body {
 	list-style: none;
 }
 
-#navbar li, #navbar a {
-	float: left;
-	margin-bottom: 0;
+@media (max-width: 768px) {
+	#navbar ul {
+		list-style: none;
+		padding: 0;
+		padding-left: 1.5em;
+	}
 }
 
+@media (min-width: 768px) {
+	#navbar li, #navbar a {
+		float: left;
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 768px) {
+	#navbar li {
+		float: none;
+	}
+}
+
+#nav-toggle {
+	display: none;
+	position: absolute;
+	padding-top: 10px;
+	top: 22px;
+	right: 25px;
+	width: 34px;
+	height: 34px;
+}
+
+@media (max-width: 768px) {
+	#nav-toggle {
+		display: block;
+	}
+}
+
+/* Three bars for mobile/small display navbar */
+.threeBars:before {
+	background-color: white;
+	border-radius: 2px;
+	height: 3px;
+	width: 34px;
+	position: absolute;
+	display: block;
+	content: '';
+	top: -10px;
+}
+.threeBars {
+	background-color: white;
+	border-radius: 2px;
+	height: 3px;
+	width: 34px;
+	position: absolute;
+	display: block;
+	content: '';
+}
+.threeBars:after {
+	background-color: white;
+	border-radius: 2px;
+	height: 3px;
+	width: 34px;
+	position: absolute;
+	display: block;
+	content: '';
+	bottom: -10px;
+}
+#navbar.opaque .threeBars:before {
+	background-color: #939393;
+}
+#navbar.opaque .threeBars {
+	background-color: #939393;
+}
+#navbar.opaque .threeBars:after {
+	background-color: #939393;
+}
 
 /* ===== SPLASH ===== */
 
