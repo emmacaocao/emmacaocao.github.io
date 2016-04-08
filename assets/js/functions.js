@@ -31,6 +31,15 @@ var UNIVERSE = UNIVERSE || {};
 			}
 		},
 
+    splashAnimation: function() {
+      setTimeout(function() {
+        $('.primary-heading').addClass('animated fadeIn');
+      }, 200);
+      setTimeout(function() {
+        $('.secondary-heading').addClass('animated slideInUp fadeIn');
+      }, 1000);
+    },
+
     parallax: function() {
       $('#splash-wrapper').parallax({imageSrc: './assets/img/city_background.jpg'});
     },
@@ -189,7 +198,11 @@ var UNIVERSE = UNIVERSE || {};
     }
   };
 
-  UNIVERSE.documentOnLoad = {};
+  UNIVERSE.documentOnLoad = {
+    init: function() {
+      UNIVERSE.initialize.splashAnimation();
+    }
+  };
 
   var $window = $(window),
     $body = $('body'),
