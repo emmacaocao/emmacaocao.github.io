@@ -115,6 +115,7 @@ body {
 	#navbar ul {
 		list-style: none;
 		padding: 0;
+		border-bottom: 1px solid #dddddd;
 	}
 }
 
