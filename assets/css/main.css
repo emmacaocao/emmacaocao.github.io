@@ -315,8 +315,14 @@ body {
 	letter-spacing: 0;
 }
 
+.section-content li {
+	color: rgb(80,80,80);
+	margin-bottom: 1rem;
+}
+
 .section-content p {
-	color: rgb(90,90,90);
+	color: rgb(125,125,125);
+	font-style: italic;
 	margin-bottom: 1rem;
 }
 
